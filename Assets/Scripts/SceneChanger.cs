@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Esta línea es obligatoria para cambiar escenas
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    // Esta función debe ser 'public' para que el botón pueda verla
-    public void CambiarEscena(string nombreDeLaEscena)
+    public void CambiarEscena(string Gat1)
     {
+        // Usamos la variable, NO el nombre fijo
         SceneManager.LoadScene(Gat1);
     }
-    
 }
