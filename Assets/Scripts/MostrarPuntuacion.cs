@@ -13,6 +13,6 @@ public class MostrarPuntuacion : MonoBehaviour
         int scoreActual = PlayerPrefs.GetInt("ScoreGlobal", 0);
 
         // Escribimos el número en el texto de la pantalla
-        textoScore.text = "Puntuación: " + scoreActual.ToString();
+        textoScore.text = "Score: " + scoreActual.ToString();
     }
 }
