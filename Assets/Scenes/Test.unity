@@ -350,7 +350,10 @@ VisualEffect:
     m_Vector3f:
       m_Array: []
     m_Vector4f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 59.017704, y: 21.598791, z: 3.6190114, w: 0}
+        m_Name: Color
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -638,7 +641,7 @@ Transform:
   m_GameObject: {fileID: 1024334044}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.02, y: 0, z: -2.62}
+  m_LocalPosition: {x: 5.24, y: 0, z: -2.98}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
