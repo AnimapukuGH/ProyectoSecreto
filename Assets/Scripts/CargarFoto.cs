@@ -1,55 +1,66 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
+using System.IO; 
 
 public class CargarFoto : MonoBehaviour
 {
     [Header("Arrastra aquí la Imagen de tu UI")]
     public Image marcoDeFoto;
 
+    [Header("Cambio de Color")]
+    public Image assetParaCambiarColor; // El asset (botón, fondo, icono) que va a cambiar
+    public Color colorAlSubirFoto = Color.green; // El color que quieres que tome
+
     void Start()
     {
         string rutaGuardada = PlayerPrefs.GetString("RutaMiFoto", "");
 
+        // Si ya había una foto guardada al empezar la escena...
         if (rutaGuardada != "" && File.Exists(rutaGuardada))
         {
             ConvertirFotoASprite(rutaGuardada);
+            
+            // Mantenemos el nuevo color porque ya hay foto
+            if(assetParaCambiarColor != null) 
+            {
+                assetParaCambiarColor.color = colorAlSubirFoto;
+            }
         }
     }
 
     public void AbrirExploradorYMostrar()
     {
-#if UNITY_EDITOR
+        #if UNITY_EDITOR
         string rutaArchivo = UnityEditor.EditorUtility.OpenFilePanel("Selecciona una foto", "", "png,jpg,jpeg");
 
         if (rutaArchivo != "")
         {
             ConvertirFotoASprite(rutaArchivo);
             
-            // Guardamos la ruta de la foto para que se mantenga al cambiar de escena
             PlayerPrefs.SetString("RutaMiFoto", rutaArchivo);
             
-            // --- NUEVO CÓDIGO: LIMITAR A UNA SOLA RECOMPENSA ---
-            // Miramos en la memoria si ya cobró la recompensa (0 = No, 1 = Sí)
+            // --- NUEVO: CAMBIO DE COLOR AL ADJUNTAR ---
+            if(assetParaCambiarColor != null) 
+            {
+                assetParaCambiarColor.color = colorAlSubirFoto;
+            }
+            // ------------------------------------------
+
             int recompensaCobrada = PlayerPrefs.GetInt("RecompensaFoto", 0);
             
-            if (recompensaCobrada == 0) // Si es 0, es la primera vez que sube foto
+            if (recompensaCobrada == 0)
             {
                 int scoreActual = PlayerPrefs.GetInt("ScoreGlobal", 0); 
-                scoreActual += 100; // Sumamos 100
+                scoreActual += 100;
                 PlayerPrefs.SetInt("ScoreGlobal", scoreActual); 
-                
-                // Le decimos a la memoria que YA ha cobrado el premio
-                // Así, la próxima vez que suba foto, esta condición no se cumplirá
                 PlayerPrefs.SetInt("RecompensaFoto", 1); 
             }
-            // ---------------------------------------------------
             
-            PlayerPrefs.Save(); // Confirmamos todos los cambios
+            PlayerPrefs.Save();
         }
-#else
+        #else
         Debug.LogWarning("Para el juego final exportado, necesitas un plugin gratuito de File Browser.");
-#endif
+        #endif
     }
 
     void ConvertirFotoASprite(string ruta)
