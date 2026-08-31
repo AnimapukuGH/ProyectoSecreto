@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,7 +71,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 16384
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -114,9 +114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 8414
-        width: 2142
-        height: 1681
+        y: 5070
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,8 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74edffe36c3daf34e9aa6a36eb4de00f
-      internalID: 1240788933
+      spriteID: 0713e87d028bf0d49967554958f36a9c
+      internalID: -1042328272
       vertices: []
       indices: 
       edges: []
@@ -135,10 +135,10 @@ TextureImporter:
       name: OpenBook000-Sheet_1
       rect:
         serializedVersion: 2
-        x: 2143
-        y: 8414
-        width: 2142
-        height: 1681
+        x: 1291
+        y: 5070
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e9d4876db506924797ffb0adf344441
-      internalID: 2023670759
+      spriteID: 1758488d48569654f9641ae10802a2e4
+      internalID: 453751474
       vertices: []
       indices: 
       edges: []
@@ -157,10 +157,10 @@ TextureImporter:
       name: OpenBook000-Sheet_2
       rect:
         serializedVersion: 2
-        x: 4286
-        y: 8414
-        width: 2142
-        height: 1681
+        x: 2582
+        y: 5070
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +169,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a7268728c059f74ba0e681f13d8b68d
-      internalID: -139288613
+      spriteID: ccec96b128b72864bbe644f18bf37d8a
+      internalID: 569127137
       vertices: []
       indices: 
       edges: []
@@ -179,10 +179,10 @@ TextureImporter:
       name: OpenBook000-Sheet_3
       rect:
         serializedVersion: 2
-        x: 6429
-        y: 8414
-        width: 2142
-        height: 1681
+        x: 3873
+        y: 5070
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +191,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa017cb0199bd5f4f99d668d5dbf2ddf
-      internalID: 1643736452
+      spriteID: 750cfb0814539504d86a8c343c68064c
+      internalID: 1174627872
       vertices: []
       indices: 
       edges: []
@@ -201,10 +201,10 @@ TextureImporter:
       name: OpenBook000-Sheet_4
       rect:
         serializedVersion: 2
-        x: 8572
-        y: 8414
-        width: 2142
-        height: 1681
+        x: 5164
+        y: 5070
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,8 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85a13a4e13dc1ae4ea4b15667b82a498
-      internalID: 1931366632
+      spriteID: 3b72488093cb1fe46803b945137fa2a8
+      internalID: 220780065
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
       name: OpenBook000-Sheet_5
       rect:
         serializedVersion: 2
-        x: 10715
-        y: 8414
-        width: 2142
-        height: 1681
+        x: 6455
+        y: 5070
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e44114185f5e83141b4f354315152e58
-      internalID: -1921160625
+      spriteID: ad3ba1b9eb3509249b81d8c265900c64
+      internalID: -1291906409
       vertices: []
       indices: 
       edges: []
@@ -245,10 +245,10 @@ TextureImporter:
       name: OpenBook000-Sheet_6
       rect:
         serializedVersion: 2
-        x: 12858
-        y: 8414
-        width: 2142
-        height: 1681
+        x: 7746
+        y: 5070
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d209cf75eab446409fcdb8351a05241
-      internalID: -615813696
+      spriteID: dcb41e1d15abdcf43bd3799a7610c8e2
+      internalID: -1500898552
       vertices: []
       indices: 
       edges: []
@@ -268,9 +268,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6732
-        width: 2142
-        height: 1681
+        y: 4056
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,8 +279,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c7bbe7ce658b0e45ac369e2a1694ce5
-      internalID: -526168736
+      spriteID: dcf98e3239a9b024595c1a90572add93
+      internalID: 1342363278
       vertices: []
       indices: 
       edges: []
@@ -289,10 +289,10 @@ TextureImporter:
       name: OpenBook000-Sheet_8
       rect:
         serializedVersion: 2
-        x: 2143
-        y: 6732
-        width: 2142
-        height: 1681
+        x: 1291
+        y: 4056
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,8 +301,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1589821b9bc9324ea4d21ab036df4a7
-      internalID: 74652891
+      spriteID: e8ee01a395b0c654c9603691a6c97f4d
+      internalID: 882970457
       vertices: []
       indices: 
       edges: []
@@ -311,10 +311,10 @@ TextureImporter:
       name: OpenBook000-Sheet_9
       rect:
         serializedVersion: 2
-        x: 4286
-        y: 6732
-        width: 2142
-        height: 1681
+        x: 2582
+        y: 4056
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,8 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 212bc5f840372aa4880ffbb50acab1fe
-      internalID: 504235174
+      spriteID: 48abb473ec5ce9c4aa1297a51ebc6724
+      internalID: 1638362969
       vertices: []
       indices: 
       edges: []
@@ -333,10 +333,10 @@ TextureImporter:
       name: OpenBook000-Sheet_10
       rect:
         serializedVersion: 2
-        x: 6429
-        y: 6732
-        width: 2142
-        height: 1681
+        x: 3873
+        y: 4056
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -345,8 +345,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc56640415a351a4ba77e9497d357e61
-      internalID: -1834552755
+      spriteID: 40bc69124ecbcc042be98693da62883e
+      internalID: 2099023639
       vertices: []
       indices: 
       edges: []
@@ -355,10 +355,10 @@ TextureImporter:
       name: OpenBook000-Sheet_11
       rect:
         serializedVersion: 2
-        x: 8572
-        y: 6732
-        width: 2142
-        height: 1681
+        x: 5164
+        y: 4056
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -367,8 +367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51a4aa13b00fe7f4abe9c0d8ce789a2b
-      internalID: -1835095900
+      spriteID: a4b5bc983c2b3194bb6132be8898c4fa
+      internalID: 2083033142
       vertices: []
       indices: 
       edges: []
@@ -377,10 +377,10 @@ TextureImporter:
       name: OpenBook000-Sheet_12
       rect:
         serializedVersion: 2
-        x: 10715
-        y: 6732
-        width: 2142
-        height: 1681
+        x: 6455
+        y: 4056
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,8 +389,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89e532575d3ed4c4991cbc94968af2e8
-      internalID: 745234745
+      spriteID: 3e8c34bcbc4abbc41a8bb6fc0f03a690
+      internalID: 788428969
       vertices: []
       indices: 
       edges: []
@@ -399,10 +399,10 @@ TextureImporter:
       name: OpenBook000-Sheet_13
       rect:
         serializedVersion: 2
-        x: 12858
-        y: 6732
-        width: 2142
-        height: 1681
+        x: 7746
+        y: 4056
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -411,8 +411,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4c5ad8d10c2f9d46a44db105f370492
-      internalID: -428629828
+      spriteID: f70c16b00c7741641bba6c5909e7aa69
+      internalID: 312726782
       vertices: []
       indices: 
       edges: []
@@ -422,9 +422,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5050
-        width: 2142
-        height: 1681
+        y: 3042
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,8 +433,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa76c81f74791cd49add533aaf85c27e
-      internalID: -1902816733
+      spriteID: 404fca93d45bc8b47a0138213b9e78a2
+      internalID: 587194537
       vertices: []
       indices: 
       edges: []
@@ -443,10 +443,10 @@ TextureImporter:
       name: OpenBook000-Sheet_15
       rect:
         serializedVersion: 2
-        x: 2143
-        y: 5050
-        width: 2142
-        height: 1681
+        x: 1291
+        y: 3042
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -455,8 +455,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86bbea23d0f93c349a28d55f36d7557b
-      internalID: -802451989
+      spriteID: 1f34ede879b62e342bf8cb5d10861060
+      internalID: -1306595759
       vertices: []
       indices: 
       edges: []
@@ -465,10 +465,10 @@ TextureImporter:
       name: OpenBook000-Sheet_16
       rect:
         serializedVersion: 2
-        x: 4286
-        y: 5050
-        width: 2142
-        height: 1681
+        x: 2582
+        y: 3042
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -477,8 +477,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9119ce359f6e3d43970748e7fdd761f
-      internalID: -2080048428
+      spriteID: 3fa4ff77c3155d844b05d53e10cb795a
+      internalID: 387571358
       vertices: []
       indices: 
       edges: []
@@ -487,10 +487,10 @@ TextureImporter:
       name: OpenBook000-Sheet_17
       rect:
         serializedVersion: 2
-        x: 6429
-        y: 5050
-        width: 2142
-        height: 1681
+        x: 3873
+        y: 3042
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,8 +499,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8899e60f246f2e429676f1921115549
-      internalID: -188900013
+      spriteID: 7540f5dd5c759974b8021c12dc4deaef
+      internalID: -1356508556
       vertices: []
       indices: 
       edges: []
@@ -509,10 +509,10 @@ TextureImporter:
       name: OpenBook000-Sheet_18
       rect:
         serializedVersion: 2
-        x: 8572
-        y: 5050
-        width: 2142
-        height: 1681
+        x: 5164
+        y: 3042
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,8 +521,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28900f2c78a4b5d41b07cd91cbae5af6
-      internalID: -1907153644
+      spriteID: 19f6a0da0aef1f4499651317a70dca25
+      internalID: -2081362118
       vertices: []
       indices: 
       edges: []
@@ -531,10 +531,10 @@ TextureImporter:
       name: OpenBook000-Sheet_19
       rect:
         serializedVersion: 2
-        x: 10715
-        y: 5050
-        width: 2142
-        height: 1681
+        x: 6455
+        y: 3042
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -543,8 +543,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71631bc880dcfbc45a958f2150d9aa00
-      internalID: 55417343
+      spriteID: f8db7077833e5874da9c83d1d731718f
+      internalID: -1922128361
       vertices: []
       indices: 
       edges: []
@@ -553,10 +553,10 @@ TextureImporter:
       name: OpenBook000-Sheet_20
       rect:
         serializedVersion: 2
-        x: 12858
-        y: 5050
-        width: 2142
-        height: 1681
+        x: 7746
+        y: 3042
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -565,8 +565,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474f1ccea11173f4882f959730d1166f
-      internalID: 493819541
+      spriteID: 9baab48638b44e44fa34d427effb32a9
+      internalID: -263790093
       vertices: []
       indices: 
       edges: []
@@ -576,9 +576,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3368
-        width: 2142
-        height: 1681
+        y: 2028
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -587,8 +587,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08a699c3e0ff8c347b2c4442ea6d6fb4
-      internalID: -648159325
+      spriteID: 9fa04259851b5a84ea82206ff75bd609
+      internalID: 1741094900
       vertices: []
       indices: 
       edges: []
@@ -597,10 +597,10 @@ TextureImporter:
       name: OpenBook000-Sheet_22
       rect:
         serializedVersion: 2
-        x: 2143
-        y: 3368
-        width: 2142
-        height: 1681
+        x: 1291
+        y: 2028
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -609,8 +609,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf8595fa753c57d418245e207e5aabf6
-      internalID: -692331182
+      spriteID: c3c69532b596db547a1d00f48e959087
+      internalID: 1133521204
       vertices: []
       indices: 
       edges: []
@@ -619,10 +619,10 @@ TextureImporter:
       name: OpenBook000-Sheet_23
       rect:
         serializedVersion: 2
-        x: 4286
-        y: 3368
-        width: 2142
-        height: 1681
+        x: 2582
+        y: 2028
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,8 +631,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c4f7ee55cd4a9c4ba1108e7c635e176
-      internalID: 409395377
+      spriteID: 803ceb3caa6a21942aa3a8c2a3a64854
+      internalID: 186760994
       vertices: []
       indices: 
       edges: []
@@ -641,10 +641,10 @@ TextureImporter:
       name: OpenBook000-Sheet_24
       rect:
         serializedVersion: 2
-        x: 6429
-        y: 3368
-        width: 2142
-        height: 1681
+        x: 3873
+        y: 2028
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -653,8 +653,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a70e60edf8236bd4da667974e030b31b
-      internalID: 199470634
+      spriteID: 3ad53f7fa674fda4fae199136c53954a
+      internalID: -1895712408
       vertices: []
       indices: 
       edges: []
@@ -663,10 +663,10 @@ TextureImporter:
       name: OpenBook000-Sheet_25
       rect:
         serializedVersion: 2
-        x: 8572
-        y: 3368
-        width: 2142
-        height: 1681
+        x: 5164
+        y: 2028
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -675,8 +675,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56b3375d5d2e5ad47aca98a2bb7bb482
-      internalID: 2130902108
+      spriteID: 5337d3e5669d1444b9a2c3052f8a2eb6
+      internalID: -1339379390
       vertices: []
       indices: 
       edges: []
@@ -685,10 +685,10 @@ TextureImporter:
       name: OpenBook000-Sheet_26
       rect:
         serializedVersion: 2
-        x: 10715
-        y: 3368
-        width: 2142
-        height: 1681
+        x: 6455
+        y: 2028
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -697,8 +697,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d037b1839fd58624a8cdf1b5a2ad486b
-      internalID: 1416793720
+      spriteID: a634c2033ae81584ca2a6a9840fcd50f
+      internalID: -107962903
       vertices: []
       indices: 
       edges: []
@@ -707,10 +707,10 @@ TextureImporter:
       name: OpenBook000-Sheet_27
       rect:
         serializedVersion: 2
-        x: 12858
-        y: 3368
-        width: 2142
-        height: 1681
+        x: 7746
+        y: 2028
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -719,8 +719,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d81ca6681178af43b87402559f65060
-      internalID: -1356908705
+      spriteID: 4bfacfbc7f3b6d548b3af8693de19c54
+      internalID: -368300528
       vertices: []
       indices: 
       edges: []
@@ -730,9 +730,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1686
-        width: 2142
-        height: 1681
+        y: 1014
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -741,8 +741,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccd1bea8dbf9e6241b80a6b97053ed68
-      internalID: -151963221
+      spriteID: 457f181e1113cd342afb624589e7d32c
+      internalID: -859382577
       vertices: []
       indices: 
       edges: []
@@ -751,10 +751,10 @@ TextureImporter:
       name: OpenBook000-Sheet_29
       rect:
         serializedVersion: 2
-        x: 2143
-        y: 1686
-        width: 2142
-        height: 1681
+        x: 1291
+        y: 1014
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -763,8 +763,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb0383ff2e17b4247b953d17684399af
-      internalID: -117722143
+      spriteID: 86bd83d057bcfe54c9348c7ad88c4639
+      internalID: -1578166964
       vertices: []
       indices: 
       edges: []
@@ -773,10 +773,10 @@ TextureImporter:
       name: OpenBook000-Sheet_30
       rect:
         serializedVersion: 2
-        x: 4286
-        y: 1686
-        width: 2142
-        height: 1681
+        x: 2582
+        y: 1014
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,8 +785,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a8aaec589777a499eb80520528eee8
-      internalID: -1117607077
+      spriteID: 3de23bf046b05ff4db7f8715db652f82
+      internalID: 389165631
       vertices: []
       indices: 
       edges: []
@@ -795,10 +795,10 @@ TextureImporter:
       name: OpenBook000-Sheet_31
       rect:
         serializedVersion: 2
-        x: 6429
-        y: 1686
-        width: 2142
-        height: 1681
+        x: 3873
+        y: 1014
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -807,8 +807,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 690c9e96fc45ca04fa6c75f82bd66d6f
-      internalID: 2028305720
+      spriteID: b72db3bda2a690542828b24edbb9ed8c
+      internalID: 197497162
       vertices: []
       indices: 
       edges: []
@@ -817,10 +817,10 @@ TextureImporter:
       name: OpenBook000-Sheet_32
       rect:
         serializedVersion: 2
-        x: 8572
-        y: 1686
-        width: 2142
-        height: 1681
+        x: 5164
+        y: 1014
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -829,8 +829,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61a90c58f043d494e86b15b69d213b3b
-      internalID: -190393874
+      spriteID: 743389098cacfca4e8740db760f06261
+      internalID: 538233059
       vertices: []
       indices: 
       edges: []
@@ -839,10 +839,10 @@ TextureImporter:
       name: OpenBook000-Sheet_33
       rect:
         serializedVersion: 2
-        x: 10715
-        y: 1686
-        width: 2142
-        height: 1681
+        x: 6455
+        y: 1014
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -851,8 +851,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 591c2e6a3d47a9a4ea66e8bf42347df2
-      internalID: 1596028608
+      spriteID: f40402923ad299548899ee0266e36658
+      internalID: 272466286
       vertices: []
       indices: 
       edges: []
@@ -861,10 +861,10 @@ TextureImporter:
       name: OpenBook000-Sheet_34
       rect:
         serializedVersion: 2
-        x: 12858
-        y: 1686
-        width: 2142
-        height: 1681
+        x: 7746
+        y: 1014
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -873,8 +873,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 443bf4b19f214ba43baf9f8122239647
-      internalID: 547716208
+      spriteID: be32326a9a3004942b6cf100cbdc1085
+      internalID: 1205766448
       vertices: []
       indices: 
       edges: []
@@ -884,9 +884,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 2142
-        height: 1681
+        y: 0
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -895,8 +895,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 900f3341b8ff53d4d99a7fd0ed9b114a
-      internalID: -2127064863
+      spriteID: 17aa37725d7e230418f459a3a0538c1e
+      internalID: -1541380545
       vertices: []
       indices: 
       edges: []
@@ -905,10 +905,10 @@ TextureImporter:
       name: OpenBook000-Sheet_36
       rect:
         serializedVersion: 2
-        x: 2143
-        y: 4
-        width: 2142
-        height: 1681
+        x: 1291
+        y: 0
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -917,8 +917,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f523a089d187404bba0e32263324df8
-      internalID: -1901686840
+      spriteID: 171beb230497ab142b7696d2e96631e2
+      internalID: -1312427919
       vertices: []
       indices: 
       edges: []
@@ -927,10 +927,10 @@ TextureImporter:
       name: OpenBook000-Sheet_37
       rect:
         serializedVersion: 2
-        x: 4286
-        y: 4
-        width: 2142
-        height: 1681
+        x: 2582
+        y: 0
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -939,8 +939,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33bd4a33bafa34c4a954910640e569e0
-      internalID: 1575914778
+      spriteID: a76d4ef83b6f1014084bce30e014fe7a
+      internalID: 538983079
       vertices: []
       indices: 
       edges: []
@@ -949,10 +949,10 @@ TextureImporter:
       name: OpenBook000-Sheet_38
       rect:
         serializedVersion: 2
-        x: 6429
-        y: 4
-        width: 2142
-        height: 1681
+        x: 3873
+        y: 0
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -961,8 +961,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cd29a936f0d4b047ad45a5888a586b3
-      internalID: 711320279
+      spriteID: daeadcb8dd93b404f96c0df0264f983b
+      internalID: -1755351107
       vertices: []
       indices: 
       edges: []
@@ -971,10 +971,10 @@ TextureImporter:
       name: OpenBook000-Sheet_39
       rect:
         serializedVersion: 2
-        x: 8572
-        y: 4
-        width: 2142
-        height: 1681
+        x: 5164
+        y: 0
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -983,8 +983,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31b48a21f237e7645b01db8e3be5c314
-      internalID: -547384742
+      spriteID: 86f9f943cb509b54b9939d3c85abbcd7
+      internalID: -27772117
       vertices: []
       indices: 
       edges: []
@@ -993,10 +993,10 @@ TextureImporter:
       name: OpenBook000-Sheet_40
       rect:
         serializedVersion: 2
-        x: 10715
-        y: 4
-        width: 2142
-        height: 1681
+        x: 6455
+        y: 0
+        width: 1291
+        height: 1014
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1005,8 +1005,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff5a1a1cee4ae54b8c210c62580a91a
-      internalID: -441671565
+      spriteID: e82a36c67f5671348abc19c734444674
+      internalID: -1752900510
       vertices: []
       indices: 
       edges: []
@@ -1015,7 +1015,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9710b2e188497b2489cd508b62e759d6
+    spriteID: 138eafd84f5433b45bae5da71dbfac29
     internalID: 0
     vertices: []
     indices: 
@@ -1025,49 +1025,49 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":2142.0,"y":1681.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":1291.0,"y":1014.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      OpenBook000-Sheet_0: 1240788933
-      OpenBook000-Sheet_1: 2023670759
-      OpenBook000-Sheet_10: -1834552755
-      OpenBook000-Sheet_11: -1835095900
-      OpenBook000-Sheet_12: 745234745
-      OpenBook000-Sheet_13: -428629828
-      OpenBook000-Sheet_14: -1902816733
-      OpenBook000-Sheet_15: -802451989
-      OpenBook000-Sheet_16: -2080048428
-      OpenBook000-Sheet_17: -188900013
-      OpenBook000-Sheet_18: -1907153644
-      OpenBook000-Sheet_19: 55417343
-      OpenBook000-Sheet_2: -139288613
-      OpenBook000-Sheet_20: 493819541
-      OpenBook000-Sheet_21: -648159325
-      OpenBook000-Sheet_22: -692331182
-      OpenBook000-Sheet_23: 409395377
-      OpenBook000-Sheet_24: 199470634
-      OpenBook000-Sheet_25: 2130902108
-      OpenBook000-Sheet_26: 1416793720
-      OpenBook000-Sheet_27: -1356908705
-      OpenBook000-Sheet_28: -151963221
-      OpenBook000-Sheet_29: -117722143
-      OpenBook000-Sheet_3: 1643736452
-      OpenBook000-Sheet_30: -1117607077
-      OpenBook000-Sheet_31: 2028305720
-      OpenBook000-Sheet_32: -190393874
-      OpenBook000-Sheet_33: 1596028608
-      OpenBook000-Sheet_34: 547716208
-      OpenBook000-Sheet_35: -2127064863
-      OpenBook000-Sheet_36: -1901686840
-      OpenBook000-Sheet_37: 1575914778
-      OpenBook000-Sheet_38: 711320279
-      OpenBook000-Sheet_39: -547384742
-      OpenBook000-Sheet_4: 1931366632
-      OpenBook000-Sheet_40: -441671565
-      OpenBook000-Sheet_5: -1921160625
-      OpenBook000-Sheet_6: -615813696
-      OpenBook000-Sheet_7: -526168736
-      OpenBook000-Sheet_8: 74652891
-      OpenBook000-Sheet_9: 504235174
+      OpenBook000-Sheet_0: -1042328272
+      OpenBook000-Sheet_1: 453751474
+      OpenBook000-Sheet_10: 2099023639
+      OpenBook000-Sheet_11: 2083033142
+      OpenBook000-Sheet_12: 788428969
+      OpenBook000-Sheet_13: 312726782
+      OpenBook000-Sheet_14: 587194537
+      OpenBook000-Sheet_15: -1306595759
+      OpenBook000-Sheet_16: 387571358
+      OpenBook000-Sheet_17: -1356508556
+      OpenBook000-Sheet_18: -2081362118
+      OpenBook000-Sheet_19: -1922128361
+      OpenBook000-Sheet_2: 569127137
+      OpenBook000-Sheet_20: -263790093
+      OpenBook000-Sheet_21: 1741094900
+      OpenBook000-Sheet_22: 1133521204
+      OpenBook000-Sheet_23: 186760994
+      OpenBook000-Sheet_24: -1895712408
+      OpenBook000-Sheet_25: -1339379390
+      OpenBook000-Sheet_26: -107962903
+      OpenBook000-Sheet_27: -368300528
+      OpenBook000-Sheet_28: -859382577
+      OpenBook000-Sheet_29: -1578166964
+      OpenBook000-Sheet_3: 1174627872
+      OpenBook000-Sheet_30: 389165631
+      OpenBook000-Sheet_31: 197497162
+      OpenBook000-Sheet_32: 538233059
+      OpenBook000-Sheet_33: 272466286
+      OpenBook000-Sheet_34: 1205766448
+      OpenBook000-Sheet_35: -1541380545
+      OpenBook000-Sheet_36: -1312427919
+      OpenBook000-Sheet_37: 538983079
+      OpenBook000-Sheet_38: -1755351107
+      OpenBook000-Sheet_39: -27772117
+      OpenBook000-Sheet_4: 220780065
+      OpenBook000-Sheet_40: -1752900510
+      OpenBook000-Sheet_5: -1291906409
+      OpenBook000-Sheet_6: -1500898552
+      OpenBook000-Sheet_7: 1342363278
+      OpenBook000-Sheet_8: 882970457
+      OpenBook000-Sheet_9: 1638362969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
