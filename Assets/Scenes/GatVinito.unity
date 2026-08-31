@@ -3800,7 +3800,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2015427754}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: CambiarEscena
         m_Mode: 5
@@ -5438,7 +5438,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2015427752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0210718a9e7be904a83409991ba3c1c6, type: 3}
+  m_Script: {fileID: 11500000, guid: 836df99326dcdea41b773cce3a7fb08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
 --- !u!1 &2074466820

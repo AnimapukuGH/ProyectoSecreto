@@ -1,0 +1,1075 @@
+fileFormatVersion: 2
+guid: 6a6d41ddd47a1a84194ece00189fe34c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8414
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74edffe36c3daf34e9aa6a36eb4de00f
+      internalID: 1240788933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 8414
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9d4876db506924797ffb0adf344441
+      internalID: 2023670759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 8414
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7268728c059f74ba0e681f13d8b68d
+      internalID: -139288613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 6429
+        y: 8414
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa017cb0199bd5f4f99d668d5dbf2ddf
+      internalID: 1643736452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 8572
+        y: 8414
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a13a4e13dc1ae4ea4b15667b82a498
+      internalID: 1931366632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 10715
+        y: 8414
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44114185f5e83141b4f354315152e58
+      internalID: -1921160625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 12858
+        y: 8414
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d209cf75eab446409fcdb8351a05241
+      internalID: -615813696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6732
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7bbe7ce658b0e45ac369e2a1694ce5
+      internalID: -526168736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 6732
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1589821b9bc9324ea4d21ab036df4a7
+      internalID: 74652891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 6732
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212bc5f840372aa4880ffbb50acab1fe
+      internalID: 504235174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6429
+        y: 6732
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc56640415a351a4ba77e9497d357e61
+      internalID: -1834552755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 8572
+        y: 6732
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a4aa13b00fe7f4abe9c0d8ce789a2b
+      internalID: -1835095900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 10715
+        y: 6732
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e532575d3ed4c4991cbc94968af2e8
+      internalID: 745234745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 12858
+        y: 6732
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c5ad8d10c2f9d46a44db105f370492
+      internalID: -428629828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5050
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa76c81f74791cd49add533aaf85c27e
+      internalID: -1902816733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 5050
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bbea23d0f93c349a28d55f36d7557b
+      internalID: -802451989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 5050
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9119ce359f6e3d43970748e7fdd761f
+      internalID: -2080048428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 6429
+        y: 5050
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8899e60f246f2e429676f1921115549
+      internalID: -188900013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 8572
+        y: 5050
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28900f2c78a4b5d41b07cd91cbae5af6
+      internalID: -1907153644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 10715
+        y: 5050
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71631bc880dcfbc45a958f2150d9aa00
+      internalID: 55417343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 12858
+        y: 5050
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474f1ccea11173f4882f959730d1166f
+      internalID: 493819541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3368
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a699c3e0ff8c347b2c4442ea6d6fb4
+      internalID: -648159325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 3368
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8595fa753c57d418245e207e5aabf6
+      internalID: -692331182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 3368
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4f7ee55cd4a9c4ba1108e7c635e176
+      internalID: 409395377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 6429
+        y: 3368
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70e60edf8236bd4da667974e030b31b
+      internalID: 199470634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 8572
+        y: 3368
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b3375d5d2e5ad47aca98a2bb7bb482
+      internalID: 2130902108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 10715
+        y: 3368
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d037b1839fd58624a8cdf1b5a2ad486b
+      internalID: 1416793720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 12858
+        y: 3368
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d81ca6681178af43b87402559f65060
+      internalID: -1356908705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1686
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd1bea8dbf9e6241b80a6b97053ed68
+      internalID: -151963221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 1686
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0383ff2e17b4247b953d17684399af
+      internalID: -117722143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 1686
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a8aaec589777a499eb80520528eee8
+      internalID: -1117607077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 6429
+        y: 1686
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690c9e96fc45ca04fa6c75f82bd66d6f
+      internalID: 2028305720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 8572
+        y: 1686
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a90c58f043d494e86b15b69d213b3b
+      internalID: -190393874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 10715
+        y: 1686
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 591c2e6a3d47a9a4ea66e8bf42347df2
+      internalID: 1596028608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 12858
+        y: 1686
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443bf4b19f214ba43baf9f8122239647
+      internalID: 547716208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900f3341b8ff53d4d99a7fd0ed9b114a
+      internalID: -2127064863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 4
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f523a089d187404bba0e32263324df8
+      internalID: -1901686840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 4
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bd4a33bafa34c4a954910640e569e0
+      internalID: 1575914778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 6429
+        y: 4
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd29a936f0d4b047ad45a5888a586b3
+      internalID: 711320279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 8572
+        y: 4
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b48a21f237e7645b01db8e3be5c314
+      internalID: -547384742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OpenBook000-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 10715
+        y: 4
+        width: 2142
+        height: 1681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff5a1a1cee4ae54b8c210c62580a91a
+      internalID: -441671565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9710b2e188497b2489cd508b62e759d6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":6.0},"gridSpriteSize":{"x":2142.0,"y":1681.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":1.0,"y":1.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      OpenBook000-Sheet_0: 1240788933
+      OpenBook000-Sheet_1: 2023670759
+      OpenBook000-Sheet_10: -1834552755
+      OpenBook000-Sheet_11: -1835095900
+      OpenBook000-Sheet_12: 745234745
+      OpenBook000-Sheet_13: -428629828
+      OpenBook000-Sheet_14: -1902816733
+      OpenBook000-Sheet_15: -802451989
+      OpenBook000-Sheet_16: -2080048428
+      OpenBook000-Sheet_17: -188900013
+      OpenBook000-Sheet_18: -1907153644
+      OpenBook000-Sheet_19: 55417343
+      OpenBook000-Sheet_2: -139288613
+      OpenBook000-Sheet_20: 493819541
+      OpenBook000-Sheet_21: -648159325
+      OpenBook000-Sheet_22: -692331182
+      OpenBook000-Sheet_23: 409395377
+      OpenBook000-Sheet_24: 199470634
+      OpenBook000-Sheet_25: 2130902108
+      OpenBook000-Sheet_26: 1416793720
+      OpenBook000-Sheet_27: -1356908705
+      OpenBook000-Sheet_28: -151963221
+      OpenBook000-Sheet_29: -117722143
+      OpenBook000-Sheet_3: 1643736452
+      OpenBook000-Sheet_30: -1117607077
+      OpenBook000-Sheet_31: 2028305720
+      OpenBook000-Sheet_32: -190393874
+      OpenBook000-Sheet_33: 1596028608
+      OpenBook000-Sheet_34: 547716208
+      OpenBook000-Sheet_35: -2127064863
+      OpenBook000-Sheet_36: -1901686840
+      OpenBook000-Sheet_37: 1575914778
+      OpenBook000-Sheet_38: 711320279
+      OpenBook000-Sheet_39: -547384742
+      OpenBook000-Sheet_4: 1931366632
+      OpenBook000-Sheet_40: -441671565
+      OpenBook000-Sheet_5: -1921160625
+      OpenBook000-Sheet_6: -615813696
+      OpenBook000-Sheet_7: -526168736
+      OpenBook000-Sheet_8: 74652891
+      OpenBook000-Sheet_9: 504235174
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
