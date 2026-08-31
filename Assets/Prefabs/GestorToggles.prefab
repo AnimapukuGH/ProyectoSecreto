@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063103908587210199}
-  - component: {fileID: 6389597847835592893}
+  - component: {fileID: 6757464490157666342}
   m_Layer: 0
   m_Name: GestorToggles
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6389597847835592893
+--- !u!114 &6757464490157666342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 219fc7127ba34c04795799fe6f035c4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GestorToggles
-  idUnicoFoto: photo artista
+  idUnicoFoto: 
   toggles:
   - {fileID: 0}
   - {fileID: 0}
