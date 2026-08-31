@@ -1,29 +1,43 @@
 using UnityEngine;
-using UnityEngine.UI; // Necessari per controlar Toggles i Botons
+using UnityEngine.UI;
 
 public class GestorToggles : MonoBehaviour
 {
+    [Header("El MATEIX Identificador que a CargarFoto")]
+    public string idUnicoFoto;
+
     [Header("Arrossega aquí els teus Toggles (Missions)")]
     public Toggle[] toggles;
 
     [Header("Arrossega aquí el Botó de la Foto")]
     public Button botoFoto;
 
-    // Utilitzem Update perquè el joc vigili constantment què està passant
+    [Header("Quants Toggles calen per pujar la foto?")]
+    public int togglesNecessaris = 2;
+
     void Update()
     {
-        // 1. Mirem si la foto ja està pujada (és a dir, si ja va cobrar la recompensa de 100 punts)
-        if (PlayerPrefs.GetInt("RecompensaFoto", 0) == 1)
+        // 1. Busquem la memòria EXCLUSIVA d'aquesta escena
+        string idRecompensa = "Recompensa_" + idUnicoFoto;
+
+        if (PlayerPrefs.GetInt(idRecompensa, 0) == 1)
         {
-            // Bloquegem tots els toggles perquè no es puguin clicar més
+            // Bloqueamos los clics de forma invisible añadiendo un CanvasGroup
             foreach (Toggle t in toggles)
             {
-                t.interactable = false;
+                // Busca si ya tiene un CanvasGroup, si no lo tiene, lo crea automáticamente
+                CanvasGroup cg = t.GetComponent<CanvasGroup>();
+                if (cg == null)
+                {
+                    cg = t.gameObject.AddComponent<CanvasGroup>();
+                }
+
+                // Desactiva la detección del ratón (no se puede clicar)
+                cg.blocksRaycasts = false;
             }
 
-            // Com que ja estan bloquejats, apaguem aquest script perquè no consumeixi rendiment
             this.enabled = false;
-            return; // Sortim de la funció
+            return;
         }
 
         // 2. Si la foto NO s'ha pujat encara, comptem quants toggles estan marcats
@@ -36,8 +50,8 @@ public class GestorToggles : MonoBehaviour
             }
         }
 
-        // 3. Si n'hi ha 3 (o més) actius, activem el botó. Si no, el mantenim desactivat.
-        if (togglesActius >= 3)
+        // 3. Comparem amb la quantitat necessària que posis a l'Inspector
+        if (togglesActius >= togglesNecessaris)
         {
             botoFoto.interactable = true;
         }
