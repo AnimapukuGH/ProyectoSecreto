@@ -1980,6 +1980,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 748014669}
     - target: {fileID: 5701837730674041589, guid: 1918b2d3ed5b7b14a8bc62f7984493e9, type: 3}
+      propertyPath: textoContador
+      value: 
+      objectReference: {fileID: 369208583}
+    - target: {fileID: 5701837730674041589, guid: 1918b2d3ed5b7b14a8bc62f7984493e9, type: 3}
       propertyPath: assetParaCambiarColor
       value: 
       objectReference: {fileID: 1825710556}
@@ -3237,6 +3241,7 @@ MonoBehaviour:
   idUnicoFoto: 
   marcoDeFoto: {fileID: 0}
   imagenCheck: {fileID: 0}
+  textoContador: {fileID: 0}
   segundoCanvas: {fileID: 0}
   panelDeCierre: {fileID: 0}
 --- !u!114 &471788828
@@ -6634,6 +6639,10 @@ PrefabInstance:
       propertyPath: segundoCanvas
       value: 
       objectReference: {fileID: 570430327}
+    - target: {fileID: 1691009079284380682, guid: f0430e9b86b19fc4ba3932b243aac02c, type: 3}
+      propertyPath: textoContador
+      value: 
+      objectReference: {fileID: 731951189}
     - target: {fileID: 1943002876978092843, guid: f0430e9b86b19fc4ba3932b243aac02c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7069,6 +7078,10 @@ PrefabInstance:
       propertyPath: segundoCanvas
       value: 
       objectReference: {fileID: 158868530}
+    - target: {fileID: 1691009079284380682, guid: f0430e9b86b19fc4ba3932b243aac02c, type: 3}
+      propertyPath: textoContador
+      value: 
+      objectReference: {fileID: 1531048909}
     - target: {fileID: 1943002876978092843, guid: f0430e9b86b19fc4ba3932b243aac02c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

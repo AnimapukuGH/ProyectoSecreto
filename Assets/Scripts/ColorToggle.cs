@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro; // Necesario para TextMeshPro
 
 public class ColorToggle : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class ColorToggle : MonoBehaviour
     public Toggle miToggle;
     public Image imagenFondo;
     public GameObject segundoCanvas;
+
+    [Header("Texto de Estado")]
+    [Tooltip("Arrastra aquí el componente de texto que muestra el 0/1")]
+    public TextMeshProUGUI textoContador;
+    // Nota: Si usas el Text antiguo de Unity, cambia la línea de arriba por: public Text textoContador;
 
     [Tooltip("Arrastra aquí el Panel de fondo del segundo Canvas")]
     public GameObject panelDeCierre;
@@ -52,6 +58,9 @@ public class ColorToggle : MonoBehaviour
         if (imagenFondo != null)
             imagenFondo.color = estabaActivado ? colorActivado : colorDesactivado;
 
+        // Actualizamos el texto al iniciar según el estado guardado
+        ActualizarTexto(estabaActivado);
+
         if (segundoCanvas != null)
             segundoCanvas.SetActive(false);
 
@@ -86,6 +95,9 @@ public class ColorToggle : MonoBehaviour
         if (imagenFondo != null)
             imagenFondo.color = colorActivado;
 
+        // Forzamos que se mantenga en 1/1 ya que permanece activado (verde)
+        ActualizarTexto(true);
+
         PlayerPrefs.SetInt(claveGuardado, 1);
         PlayerPrefs.Save();
     }
@@ -97,5 +109,16 @@ public class ColorToggle : MonoBehaviour
 
         if (segundoCanvas != null)
             segundoCanvas.SetActive(activado);
+
+        // Cambia el texto dinámicamente
+        ActualizarTexto(activado);
+    }
+
+    void ActualizarTexto(bool activado)
+    {
+        if (textoContador != null)
+        {
+            textoContador.text = activado ? "1/1" : "0/1";
+        }
     }
 }

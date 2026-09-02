@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.IO;
 using System.Collections;
 using UnityEngine.EventSystems;
+using TMPro; // Necesario para TextMeshPro
 
 public class CargarFoto : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class CargarFoto : MonoBehaviour
     [Header("Imagen del Checkmark")]
     [Tooltip("Arrastra aquí la imagen del Check o Tic que quieres que se encienda")]
     public Image imagenCheck;
+
+    [Header("Texto de Estado")]
+    [Tooltip("Arrastra aquí el componente de texto que muestra el 0/1")]
+    public TextMeshProUGUI textoContador;
+    // Nota: Si usas el Text antiguo de Unity, cambia la línea de arriba por: public Text textoContador;
 
     [Header("Componentes Segundo Canvas")]
     public GameObject segundoCanvas;
@@ -54,6 +60,11 @@ public class CargarFoto : MonoBehaviour
             }
 
             EncenderCheckmark(); // Enciende el check si ya existía una foto guardada
+            ActualizarTexto(true); // Pone el texto en 1/1 al cargar la partida si hay foto
+        }
+        else
+        {
+            ActualizarTexto(false); // Se asegura de que empiece en 0/1 si está vacío
         }
     }
 
@@ -87,6 +98,7 @@ public class CargarFoto : MonoBehaviour
         }
 
         EncenderCheckmark(); // Enciende el check al cargar una nueva foto
+        ActualizarTexto(true); // Cambia el texto a 1/1 al cargar la nueva foto exitosamente
 
         PlayerPrefs.SetString(idUnicoFoto, ruta);
 
@@ -136,6 +148,14 @@ public class CargarFoto : MonoBehaviour
                 colorHex.a = 1f; // Nos aseguramos de que la opacidad esté al 100%
                 imagenCheck.color = colorHex;
             }
+        }
+    }
+
+    void ActualizarTexto(bool fotoCargada)
+    {
+        if (textoContador != null)
+        {
+            textoContador.text = fotoCargada ? "1/1" : "0/1";
         }
     }
 

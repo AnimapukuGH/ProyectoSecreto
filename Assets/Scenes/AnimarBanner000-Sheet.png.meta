@@ -1,0 +1,2110 @@
+fileFormatVersion: 2
+guid: 92e5419cbc4e7054b8aba49d593688ff
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13958
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d9ba38a78aac6468aa087ace239948
+      internalID: 286667589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 13958
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fea75e468655e1469bd18c4e4a22fb6
+      internalID: -916991310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 13958
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7115a8a03969b47bcafefe8baf555e
+      internalID: 1240855371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 13958
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf0ea5214467d248b828f8ad8477904
+      internalID: -58834786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 13958
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91c8b5da1f8baa4ea8c6924eaadb148
+      internalID: -190566095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 13958
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fc53a54ec45804680104140f2683ef
+      internalID: -393470610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12961
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d34b9d7d46ca347a6765feca48e0e1
+      internalID: 437041564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 12961
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79465556a58c6fe4f898feffc64bd432
+      internalID: 1163533414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 12961
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022eb8178ad289146ae0a1f5976de13a
+      internalID: -826092273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 12961
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3f4145d3c58c74e89de477b06ee017
+      internalID: -434235099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 12961
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a8abecee4d94d4993a8cd9ed2294dc
+      internalID: -753405876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 12961
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a570b0197f75c4983943e12e75fc09
+      internalID: 1354110664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11964
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ef3e35e7d674e469249d25ff7b40f7
+      internalID: 335606797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 11964
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c92cbe9648f8a8438eeb0afc586b018
+      internalID: 1634982976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 11964
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7b68b9457e1dd45ab3f5ac2c08f18d
+      internalID: 1305701940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 11964
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8f3fcf0138ccf42883771fae44de79
+      internalID: 671635151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 11964
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c9377e1b1b2ea40a4b677f2bd9dbfd
+      internalID: 1850452241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 11964
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a77b407c992aaf40957d6a7d736045f
+      internalID: -1866660059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10967
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb57eb2f9f542b446968a7998c2bf000
+      internalID: 439495216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 10967
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f0b857f3758a347b0151428443529e
+      internalID: -1050904749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 10967
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea4d0be75e7bbc499f487af0ca8713c
+      internalID: 981597051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 10967
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca8a0a2c9957bc439853897cde25871
+      internalID: 971770464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 10967
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5ca31036fd2ce478d993c083b18b19
+      internalID: -1607598261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 10967
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a135031440a02b469080d5abbc267cb
+      internalID: -965450276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9970
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112d67eb7aa099e44af5e8c0b4884398
+      internalID: -1340532651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 9970
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8827af47654cd394a8946e9ef661a46d
+      internalID: -1289176749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 9970
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2960e6c8e8c4b8244b9d5ecbb9e82258
+      internalID: -1276667077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 9970
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb280f7e24558fd4f83dafcd6f75521d
+      internalID: 667554259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 9970
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346fc50d39751884a84939c4f9b646eb
+      internalID: 451367945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 9970
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da0b1d7d59b2244397d7643382ae2b6
+      internalID: -1152321868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8973
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a073c62d230f6e41a3c049cbb50ca0f
+      internalID: 2140936284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 8973
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab322697dac6aa941b52e8b7e46e4f1f
+      internalID: 522184372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 8973
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2ce3e8b13f0a24c925ba1be559671f
+      internalID: -523891257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 8973
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b353dbd17a7cf214c8e559b3959951b8
+      internalID: -1754364995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 8973
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23489fc820906948a55f8f4719a879a
+      internalID: 395272757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 8973
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867b3271309191d4bb423823faa00ece
+      internalID: 1788923339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7976
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4439691dd4b5c954d9d1b85fba6a8412
+      internalID: 617899059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 7976
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a7c12dd159e754d97041687dd61306
+      internalID: 1995715118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 7976
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ca3329d4a2331478aee9cf88632641
+      internalID: -1220317262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 7976
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ee4edfc6b42e74f9791a026a0a9f9e
+      internalID: 1779294664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 7976
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae9b8b7814c9d447bde045628d55bc8
+      internalID: 1584391097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 7976
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd36cd80abc3554a96fe3ce64341239
+      internalID: 1976253341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6979
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55327d90d99d4946825f002e6bf86b2
+      internalID: 161218092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 6979
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb7e15c8de2c994784cb1c580ffc1ec
+      internalID: -2138605117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 6979
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ae9e777285dea4e8e686a86828206c
+      internalID: 1059263838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 6979
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a391f1a636c4948b9fec332b32702d
+      internalID: 1079155817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 6979
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1820bc2f7df50b247985d583ad6c31c0
+      internalID: 1497047963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 6979
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0586d3581544b94bb3b45ec136a66e3
+      internalID: -1822271519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5982
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d4e51e88ed3b64c8282fcde7ebf691
+      internalID: 1681690537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 5982
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92163d65a2327e54c8ee918a81698519
+      internalID: 966098731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 5982
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740420d086b9c8f4290bbf057b11711c
+      internalID: 49477942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 5982
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bab230649c11f49816ab67ae1ec58c
+      internalID: 1396422479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 5982
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516d352f357ed5546859cb07e9f4767b
+      internalID: -53547726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 5982
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9269f405b464a749a3ab24398ca48f1
+      internalID: 2080290758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4985
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae046c417c18dc4f87a9ff9a6fc8367
+      internalID: 656098950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 4985
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32258a5e78d3a4e4980d6c6aab9a60be
+      internalID: -936979825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 4985
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6958ae08342d9f84b8b251126ecfbee0
+      internalID: 793644908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 4985
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0a7ad36b493e04a8a96a6d39d49351
+      internalID: -701786144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 4985
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abb459464b92b049bc643a57905a9d1
+      internalID: -1264559181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 4985
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e594fc3f1483dad43b91cbd24aaa1d40
+      internalID: -931686548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3988
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9802eccdd5de2a6468ee921c20a7e71f
+      internalID: 1414111028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 3988
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed60231de84c94a44a329d1ab9e57b8c
+      internalID: -48623993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 3988
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e886c9f6ea2fef14ea60258ec1e3dbc1
+      internalID: 2108300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 3988
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155cb5753ea95b643814ee491fc79128
+      internalID: -1743946288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 3988
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c719b6092706ec3499012c5c3891e8dc
+      internalID: -588438352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 3988
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4a6b5736255b046aa6f8c390197b80
+      internalID: -1311431076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2991
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad10dc1f6942cd64a8dc262f45460bab
+      internalID: 1551501938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 2991
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d1ddde97ffe4f43a3b1b0288cc3d1c
+      internalID: 1235107911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 2991
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603c4635dcb0c8b40943d8e00f52215e
+      internalID: -110238661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 2991
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993c3b4d94677d94e95b80ce4f3e56de
+      internalID: -1436202002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 2991
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2c75913fcf8214fba83ea2373f8581
+      internalID: -1203118915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 2991
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0399539c7eb25849b5e7cb58d0cc49f
+      internalID: -2105378979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1994
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5158f638e894934ca3aa689c6e07f1f
+      internalID: 2138406878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 1994
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d38952e4b233b741aea9c5ed7b1f967
+      internalID: -1050088678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 1994
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9e112434b6c0c4380a5d7d035a274f
+      internalID: 1334747025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 1994
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12ec9d9a7224684dbdac202387b88d7
+      internalID: 721827890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 1994
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07887e2abda6de04a8e66afcac6d31ed
+      internalID: -2114237333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 1994
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6d1827e370f38488d1b4e9b54d51cf
+      internalID: 1246076814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 997
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6cc5cd1f007a5429acec8af80c23a3
+      internalID: 1932700865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 997
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54263eb6f769d64b95b0fa5c10b2b28
+      internalID: -758040205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_80
+      rect:
+        serializedVersion: 2
+        x: 3178
+        y: 997
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5778990801b52f43a30f7c16d99c5dc
+      internalID: -1947638950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_81
+      rect:
+        serializedVersion: 2
+        x: 4767
+        y: 997
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66d953acdb403e47b25e14ac63a3b89
+      internalID: 1386931997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_82
+      rect:
+        serializedVersion: 2
+        x: 6356
+        y: 997
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f514dee067e7e5438ee5362a413db69
+      internalID: 1659868088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_83
+      rect:
+        serializedVersion: 2
+        x: 7945
+        y: 997
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254de390f1eca644f818bebdbb799228
+      internalID: -1052258531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d813688e41de015439e325913c81fae7
+      internalID: -2052295743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AnimarBanner000-Sheet_85
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 0
+        width: 1589
+        height: 997
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7cc34724e94f643a443469dfe80c00
+      internalID: -714273617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":15.0},"gridSpriteSize":{"x":1589.0,"y":997.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      AnimarBanner000-Sheet_0: 286667589
+      AnimarBanner000-Sheet_1: -916991310
+      AnimarBanner000-Sheet_10: -753405876
+      AnimarBanner000-Sheet_11: 1354110664
+      AnimarBanner000-Sheet_12: 335606797
+      AnimarBanner000-Sheet_13: 1634982976
+      AnimarBanner000-Sheet_14: 1305701940
+      AnimarBanner000-Sheet_15: 671635151
+      AnimarBanner000-Sheet_16: 1850452241
+      AnimarBanner000-Sheet_17: -1866660059
+      AnimarBanner000-Sheet_18: 439495216
+      AnimarBanner000-Sheet_19: -1050904749
+      AnimarBanner000-Sheet_2: 1240855371
+      AnimarBanner000-Sheet_20: 981597051
+      AnimarBanner000-Sheet_21: 971770464
+      AnimarBanner000-Sheet_22: -1607598261
+      AnimarBanner000-Sheet_23: -965450276
+      AnimarBanner000-Sheet_24: -1340532651
+      AnimarBanner000-Sheet_25: -1289176749
+      AnimarBanner000-Sheet_26: -1276667077
+      AnimarBanner000-Sheet_27: 667554259
+      AnimarBanner000-Sheet_28: 451367945
+      AnimarBanner000-Sheet_29: -1152321868
+      AnimarBanner000-Sheet_3: -58834786
+      AnimarBanner000-Sheet_30: 2140936284
+      AnimarBanner000-Sheet_31: 522184372
+      AnimarBanner000-Sheet_32: -523891257
+      AnimarBanner000-Sheet_33: -1754364995
+      AnimarBanner000-Sheet_34: 395272757
+      AnimarBanner000-Sheet_35: 1788923339
+      AnimarBanner000-Sheet_36: 617899059
+      AnimarBanner000-Sheet_37: 1995715118
+      AnimarBanner000-Sheet_38: -1220317262
+      AnimarBanner000-Sheet_39: 1779294664
+      AnimarBanner000-Sheet_4: -190566095
+      AnimarBanner000-Sheet_40: 1584391097
+      AnimarBanner000-Sheet_41: 1976253341
+      AnimarBanner000-Sheet_42: 161218092
+      AnimarBanner000-Sheet_43: -2138605117
+      AnimarBanner000-Sheet_44: 1059263838
+      AnimarBanner000-Sheet_45: 1079155817
+      AnimarBanner000-Sheet_46: 1497047963
+      AnimarBanner000-Sheet_47: -1822271519
+      AnimarBanner000-Sheet_48: 1681690537
+      AnimarBanner000-Sheet_49: 966098731
+      AnimarBanner000-Sheet_5: -393470610
+      AnimarBanner000-Sheet_50: 49477942
+      AnimarBanner000-Sheet_51: 1396422479
+      AnimarBanner000-Sheet_52: -53547726
+      AnimarBanner000-Sheet_53: 2080290758
+      AnimarBanner000-Sheet_54: 656098950
+      AnimarBanner000-Sheet_55: -936979825
+      AnimarBanner000-Sheet_56: 793644908
+      AnimarBanner000-Sheet_57: -701786144
+      AnimarBanner000-Sheet_58: -1264559181
+      AnimarBanner000-Sheet_59: -931686548
+      AnimarBanner000-Sheet_6: 437041564
+      AnimarBanner000-Sheet_60: 1414111028
+      AnimarBanner000-Sheet_61: -48623993
+      AnimarBanner000-Sheet_62: 2108300034
+      AnimarBanner000-Sheet_63: -1743946288
+      AnimarBanner000-Sheet_64: -588438352
+      AnimarBanner000-Sheet_65: -1311431076
+      AnimarBanner000-Sheet_66: 1551501938
+      AnimarBanner000-Sheet_67: 1235107911
+      AnimarBanner000-Sheet_68: -110238661
+      AnimarBanner000-Sheet_69: -1436202002
+      AnimarBanner000-Sheet_7: 1163533414
+      AnimarBanner000-Sheet_70: -1203118915
+      AnimarBanner000-Sheet_71: -2105378979
+      AnimarBanner000-Sheet_72: 2138406878
+      AnimarBanner000-Sheet_73: -1050088678
+      AnimarBanner000-Sheet_74: 1334747025
+      AnimarBanner000-Sheet_75: 721827890
+      AnimarBanner000-Sheet_76: -2114237333
+      AnimarBanner000-Sheet_77: 1246076814
+      AnimarBanner000-Sheet_78: 1932700865
+      AnimarBanner000-Sheet_79: -758040205
+      AnimarBanner000-Sheet_8: -826092273
+      AnimarBanner000-Sheet_80: -1947638950
+      AnimarBanner000-Sheet_81: 1386931997
+      AnimarBanner000-Sheet_82: 1659868088
+      AnimarBanner000-Sheet_83: -1052258531
+      AnimarBanner000-Sheet_84: -2052295743
+      AnimarBanner000-Sheet_85: -714273617
+      AnimarBanner000-Sheet_9: -434235099
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
