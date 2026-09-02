@@ -1,114 +1,70 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Playables;
+using UnityEngine.Video;
+using System.Collections;
 
-public class TimelineCinematicController : MonoBehaviour
+public class CanvasVideoController : MonoBehaviour
 {
-    [Header("Cámaras")]
-    public GameObject mainCamera;
-    public GameObject cinematicCamera;
+    [Header("Componentes Canvas 1")]
+    [SerializeField] private Button playButton;
+    [SerializeField] private VideoPlayer videoPlayer;
 
-    [Header("Timeline")]
-    public PlayableDirector timelineDirector;
+    [Header("Componentes Canvas 2")]
+    [SerializeField] private GameObject canvas2;
+    [SerializeField] private CanvasGroup canvas2CanvasGroup;
 
-    [Header("UI Fundido")]
-    public Image fadeImage;
-    public float fadeDuration = 1.0f;
+    [Header("Configuración del Fade")]
+    [SerializeField] private float fadeDuration = 1.5f;
 
-    [Header("UI de la Escena (Gameplay/Menú)")]
-    // OPCIÓN A: Arrastra aquí el CanvasGroup de tu interfaz para ocultarla elegantemente
-    public CanvasGroup gameplayCanvasGroup;
-
-    // OPCIÓN B: O si lo prefieres, arrastra directamente el GameObject del Canvas para apagarlo
-    public GameObject gameplayCanvasObject;
-
-    void Start()
+    private void Start()
     {
-        // Estado inicial de la escena
-        if (mainCamera != null) mainCamera.SetActive(true);
-        if (cinematicCamera != null) cinematicCamera.SetActive(false);
-        if (fadeImage != null) fadeImage.color = new Color(1, 1, 1, 0); // Totalmente transparente
+        // Asegurar estado inicial
+        if (canvas2 != null) canvas2.SetActive(false);
+        if (canvas2CanvasGroup != null) canvas2CanvasGroup.alpha = 0f;
 
-        // Asegurar que la UI sea visible al inicio
-        ConfigurarVisibilidadUI(true);
+        // Asignar eventos
+        if (playButton != null) playButton.onClick.AddListener(StartPlayback);
+        if (videoPlayer != null) videoPlayer.loopPointReached += OnVideoFinished;
     }
 
-    public void IniciarSecuencia()
+    private void StartPlayback()
     {
-        StartCoroutine(SecuenciaTimeline());
-    }
-
-    private IEnumerator SecuenciaTimeline()
-    {
-        // 1. DESAPARECER EL CANVAS inmediatamente al pulsar el botón
-        ConfigurarVisibilidadUI(false);
-
-        // 2. Activar cámara cinemática
-        if (mainCamera != null) mainCamera.SetActive(false);
-        if (cinematicCamera != null) cinematicCamera.SetActive(true);
-
-        // 3. Reproducir el Timeline y esperar a que termine
-        if (timelineDirector != null)
+        if (videoPlayer != null)
         {
-            timelineDirector.Play();
-
-            while (timelineDirector.state == PlayState.Playing)
-            {
-                yield return null;
-            }
-        }
-
-        // 4. Fundido a Blanco (Fade In)
-        yield return StartCoroutine(Fade(0, 1));
-
-        // 5. Cambiar de cámaras (mientras la pantalla está en blanco)
-        if (cinematicCamera != null) cinematicCamera.SetActive(false);
-        if (mainCamera != null) mainCamera.SetActive(true);
-
-        yield return new WaitForSeconds(0.2f);
-
-        // 6. Volver a MOSTRAR EL CANVAS (se hace aquí para que aparezca tras el fundido)
-        ConfigurarVisibilidadUI(true);
-
-        // 7. Desaparecer el Blanco (Fade Out)
-        yield return StartCoroutine(Fade(1, 0));
-    }
-
-    // Método auxiliar para ocultar/mostrar la interfaz según lo que configures en el Inspector
-    private void ConfigurarVisibilidadUI(bool visible)
-    {
-        // Si usas CanvasGroup (Desactiva visibilidad e interacción, pero no destruye rendimiento)
-        if (gameplayCanvasGroup != null)
-        {
-            gameplayCanvasGroup.alpha = visible ? 1f : 0f;
-            gameplayCanvasGroup.interactable = visible;
-            gameplayCanvasGroup.blocksRaycasts = visible;
-        }
-
-        // Si prefieres apagar el GameObject por completo
-        if (gameplayCanvasObject != null)
-        {
-            gameplayCanvasObject.SetActive(visible);
+            // Desactivar el botón para que no se pulse dos veces
+            playButton.interactable = false;
+            videoPlayer.Play();
         }
     }
 
-    private IEnumerator Fade(float startAlpha, float endAlpha)
+    private void OnVideoFinished(VideoPlayer vp)
     {
-        if (fadeImage == null) yield break;
+        // El video ha terminado, iniciamos la transición
+        StartCoroutine(FadeInCanvas2());
+    }
 
-        float elapsedTime = 0f;
-        Color color = fadeImage.color;
+    private IEnumerator FadeInCanvas2()
+    {
+        // Activar el objeto Canvas 2 en la jerarquía
+        canvas2.SetActive(true);
 
-        while (elapsedTime < fadeDuration)
+        float currentTime = 0f;
+        while (currentTime < fadeDuration)
         {
-            elapsedTime += Time.deltaTime;
-            color.a = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / fadeDuration);
-            fadeImage.color = color;
+            currentTime += Time.deltaTime;
+            // Incrementa el alpha linealmente hasta 1
+            canvas2CanvasGroup.alpha = Mathf.Lerp(0f, 1f, currentTime / fadeDuration);
             yield return null;
         }
 
-        color.a = endAlpha;
-        fadeImage.color = color;
+        // Asegurar que quede totalmente opaco
+        canvas2CanvasGroup.alpha = 1f;
+    }
+
+    private void OnDestroy()
+    {
+        // Buena práctica: remover listeners al destruir el objeto
+        if (playButton != null) playButton.onClick.RemoveListener(StartPlayback);
+        if (videoPlayer != null) videoPlayer.loopPointReached -= OnVideoFinished;
     }
 }
