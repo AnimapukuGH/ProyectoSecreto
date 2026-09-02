@@ -1,21 +1,21 @@
 # ===============
 # CARPETAS DE UNITY
 # ===============
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-/[Mm]emoryCaptures/
-/[Rr]ecordings/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
 
 # ===============
 # PLUGINS Y CACHÉ
 # ===============
-/[Aa]ssets/Plugins/Editor/JetBrains*
-/[Aa]ssets/AssetStoreTools*
+[Aa]ssets/Plugins/Editor/JetBrains*
+[Aa]ssets/AssetStoreTools*
 .gradle/
 
 # ===============
