@@ -1,17 +1,30 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
+# ===============
+# CARPETAS DE UNITY
+# ===============
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
 /[Mm]emoryCaptures/
 /[Rr]ecordings/
+
+# ===============
+# PLUGINS Y CACHÉ
+# ===============
 /[Aa]ssets/Plugins/Editor/JetBrains*
-.vs/
+/[Aa]ssets/AssetStoreTools*
 .gradle/
-ExportedObj/
+
+# ===============
+# ENTORNO DE DESARROLLO (IDE)
+# ===============
+.vs/
+.idea/
 .consulo/
+ExportedObj/
 *.csproj
 *.unityproj
 *.sln
@@ -26,19 +39,38 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+
+# ===============
+# METADATOS GENERADOS
+# ===============
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
+
+# ===============
+# CRASHEOS Y LOGS
+# ===============
 sysinfo.txt
+crashlytics-build.properties
+*.log
+
+# ===============
+# BUILDS EMPAQUETADAS
+# ===============
 *.apk
 *.aab
 *.unitypackage
 *.app
-crashlytics-build.properties
+
+# ===============
+# SISTEMA OPERATIVO (WINDOWS / MAC)
+# ===============
 .DS_Store
 .DS_Store?
+.DS_Store.meta
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
+Thumbs.db.meta

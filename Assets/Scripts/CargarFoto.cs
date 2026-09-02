@@ -2,50 +2,34 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Collections;
-using UnityEngine.EventSystems;
-using TMPro; // Necesario para TextMeshPro
+using SimpleFileBrowser;
+using TMPro;
 
 public class CargarFoto : MonoBehaviour
 {
     [Header("Identificador Único (¡Importante!)")]
     public string idUnicoFoto;
 
-    [Header("Arrastra aquí la Imagen de tu UI")]
+    [Header("Imágenes")]
     public Image marcoDeFoto;
-
-    [Header("Imagen del Checkmark")]
-    [Tooltip("Arrastra aquí la imagen del Check o Tic que quieres que se encienda")]
     public Image imagenCheck;
-
-    [Header("Texto de Estado")]
-    [Tooltip("Arrastra aquí el componente de texto que muestra el 0/1")]
     public TextMeshProUGUI textoContador;
-    // Nota: Si usas el Text antiguo de Unity, cambia la línea de arriba por: public Text textoContador;
 
-    [Header("Componentes Segundo Canvas")]
+    [Header("Recompensa Canvas")]
     public GameObject segundoCanvas;
-    [Tooltip("Arrastra aquí el Panel de fondo del segundo Canvas")]
-    public GameObject panelDeCierre;
+    [Tooltip("Arrastra aquí el objeto que actuará como botón para cerrar el panel")]
+    public Button botonDeCierre;
 
     void Start()
     {
-        if (marcoDeFoto != null)
-        {
-            marcoDeFoto.gameObject.SetActive(false);
-        }
+        if (marcoDeFoto != null) marcoDeFoto.gameObject.SetActive(false);
+        if (segundoCanvas != null) segundoCanvas.SetActive(false);
 
-        if (segundoCanvas != null)
+        // Vinculamos el botón de cierre por código de forma segura
+        if (botonDeCierre != null)
         {
-            segundoCanvas.SetActive(false);
-        }
-
-        if (panelDeCierre != null)
-        {
-            EventTrigger trigger = panelDeCierre.GetComponent<EventTrigger>() ?? panelDeCierre.AddComponent<EventTrigger>();
-            EventTrigger.Entry entry = new EventTrigger.Entry();
-            entry.eventID = EventTriggerType.PointerClick;
-            entry.callback.AddListener((eventData) => { CerrarDesdePanel(); });
-            trigger.triggers.Add(entry);
+            botonDeCierre.onClick.RemoveAllListeners();
+            botonDeCierre.onClick.AddListener(CerrarDesdePanel);
         }
 
         string rutaGuardada = PlayerPrefs.GetString(idUnicoFoto, "");
@@ -53,99 +37,74 @@ public class CargarFoto : MonoBehaviour
         if (rutaGuardada != "" && File.Exists(rutaGuardada))
         {
             ConvertirFotoASprite(rutaGuardada);
-
-            if (marcoDeFoto != null)
-            {
-                marcoDeFoto.gameObject.SetActive(true);
-            }
-
-            EncenderCheckmark(); // Enciende el check si ya existía una foto guardada
-            ActualizarTexto(true); // Pone el texto en 1/1 al cargar la partida si hay foto
+            if (marcoDeFoto != null) marcoDeFoto.gameObject.SetActive(true);
+            EncenderCheckmark();
+            ActualizarTexto(true);
         }
         else
         {
-            ActualizarTexto(false); // Se asegura de que empiece en 0/1 si está vacío
+            ActualizarTexto(false);
         }
     }
 
     public void AbrirExploradorYMostrar()
     {
-#if UNITY_EDITOR
-        string rutaArchivo = UnityEditor.EditorUtility.OpenFilePanel(
-            "Selecciona una foto",
-            "",
-            "png,jpg,jpeg"
-        );
-
-        if (!string.IsNullOrEmpty(rutaArchivo))
-        {
-            StartCoroutine(ProcesoCargaFluida(rutaArchivo));
-        }
-#else
-        Debug.LogWarning(
-            "Para el juego final exportado, necesitas un plugin gratuito de File Browser."
-        );
-#endif
+        FileBrowser.SetFilters(true, new FileBrowser.Filter("Imágenes", ".png", ".jpg", ".jpeg"));
+        FileBrowser.SetDefaultFilter(".png");
+        StartCoroutine(MostrarExplorador());
     }
 
-    IEnumerator ProcesoCargaFluida(string ruta)
+    IEnumerator MostrarExplorador()
     {
-        ConvertirFotoASprite(ruta);
+        yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Files, false, null, null, "Selecciona una foto", "Subir");
 
-        if (marcoDeFoto != null)
+        if (FileBrowser.Success)
         {
-            marcoDeFoto.gameObject.SetActive(true);
-        }
+            string rutaArchivo = FileBrowser.Result[0];
+            ConvertirFotoASprite(rutaArchivo);
 
-        EncenderCheckmark(); // Enciende el check al cargar una nueva foto
-        ActualizarTexto(true); // Cambia el texto a 1/1 al cargar la nueva foto exitosamente
+            if (marcoDeFoto != null) marcoDeFoto.gameObject.SetActive(true);
 
-        PlayerPrefs.SetString(idUnicoFoto, ruta);
+            EncenderCheckmark();
+            ActualizarTexto(true);
+            PlayerPrefs.SetString(idUnicoFoto, rutaArchivo);
 
-        string idRecompensa = "Recompensa_" + idUnicoFoto;
-        int recompensaCobrada = PlayerPrefs.GetInt(idRecompensa, 0);
+            string idRecompensa = "Recompensa_" + idUnicoFoto;
+            int recompensaCobrada = PlayerPrefs.GetInt(idRecompensa, 0);
 
-        if (recompensaCobrada == 0)
-        {
-            int scoreActual = PlayerPrefs.GetInt("ScoreGlobal", 0);
-            scoreActual += 60;
-            PlayerPrefs.SetInt("ScoreGlobal", scoreActual);
+            if (recompensaCobrada == 0)
+            {
+                int scoreActual = PlayerPrefs.GetInt("ScoreGlobal", 0);
+                scoreActual += 60;
+                PlayerPrefs.SetInt("ScoreGlobal", scoreActual);
 
-            int scoreSecundario = PlayerPrefs.GetInt("ScoreSecundario", 0);
-            scoreSecundario += 4;
-            PlayerPrefs.SetInt("ScoreSecundario", scoreSecundario);
+                int scoreSecundario = PlayerPrefs.GetInt("ScoreSecundario", 0);
+                scoreSecundario += 4;
+                PlayerPrefs.SetInt("ScoreSecundario", scoreSecundario);
 
-            PlayerPrefs.SetInt(idRecompensa, 1);
-        }
+                PlayerPrefs.SetInt(idRecompensa, 1);
+                PlayerPrefs.Save();
 
-        PlayerPrefs.Save();
-
-        yield return new WaitForSecondsRealtime(0.2f);
-
-        if (recompensaCobrada == 0 && segundoCanvas != null)
-        {
-            segundoCanvas.SetActive(true);
+                // Mostramos el canvas de recompensa solo cuando se sube por primera vez
+                yield return new WaitForSecondsRealtime(0.2f);
+                if (segundoCanvas != null) segundoCanvas.SetActive(true);
+            }
         }
     }
 
     public void CerrarDesdePanel()
     {
-        if (segundoCanvas != null)
-        {
-            segundoCanvas.SetActive(false);
-        }
+        if (segundoCanvas != null) segundoCanvas.SetActive(false);
     }
 
-    // --- MÉTODO ACTUALIZADO CON TU COLOR HEXADECIMAL 00B99F ---
     void EncenderCheckmark()
     {
         if (imagenCheck != null)
         {
             Color colorHex;
-            // Convierte el string hexadecimal a un color real de Unity
             if (ColorUtility.TryParseHtmlString("#00B99F", out colorHex))
             {
-                colorHex.a = 1f; // Nos aseguramos de que la opacidad esté al 100%
+                colorHex.a = 1f;
                 imagenCheck.color = colorHex;
             }
         }
@@ -153,10 +112,7 @@ public class CargarFoto : MonoBehaviour
 
     void ActualizarTexto(bool fotoCargada)
     {
-        if (textoContador != null)
-        {
-            textoContador.text = fotoCargada ? "1/1" : "0/1";
-        }
+        if (textoContador != null) textoContador.text = fotoCargada ? "1/1" : "0/1";
     }
 
     void ConvertirFotoASprite(string ruta)
@@ -179,7 +135,6 @@ public class CargarFoto : MonoBehaviour
                 }
             }
         }
-
         textura.Apply();
 
         if (marcoDeFoto.sprite != null && marcoDeFoto.sprite.texture != null)
@@ -188,12 +143,7 @@ public class CargarFoto : MonoBehaviour
             Destroy(marcoDeFoto.sprite);
         }
 
-        Sprite nuevoSprite = Sprite.Create(
-            textura,
-            new Rect(0, 0, textura.width, textura.height),
-            new Vector2(0.5f, 0.5f)
-        );
-
+        Sprite nuevoSprite = Sprite.Create(textura, new Rect(0, 0, textura.width, textura.height), new Vector2(0.5f, 0.5f));
         marcoDeFoto.sprite = nuevoSprite;
         marcoDeFoto.preserveAspect = true;
     }

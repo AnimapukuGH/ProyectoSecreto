@@ -4,30 +4,39 @@ using UnityEngine.UI;
 public class PuntosToggle : MonoBehaviour
 {
     [Header("Identificador Único (¡Importante!)")]
-    public string idMision; // Ponle un nombre distinto a cada Toggle en el Inspector (ej: "Mision1", "Mision2")
+    public string idMision;
 
     [Header("Configuración")]
     public Toggle miToggle;
     public int puntosScorePrincipal = 30;
     public int puntosScoreSecundario = 3;
 
+    private bool candado = true; // Bloqueado por defecto al iniciar
+
     void Start()
     {
         if (miToggle == null)
             miToggle = GetComponent<Toggle>();
 
-        // 1. Leemos si esta misión ya estaba hecha (0 = No, 1 = Sí)
         bool estabaMarcada = PlayerPrefs.GetInt(idMision, 0) == 1;
 
-        // 2. Activamos/Desactivamos el Toggle SIN sumar ni restar puntos extra al iniciar
         miToggle.SetIsOnWithoutNotify(estabaMarcada);
-
-        // 3. Activamos el detector de clics para cuando el jugador lo pulse
         miToggle.onValueChanged.AddListener(ActualizarPuntuaciones);
+
+        // Quitamos el candado medio segundo después de cargar la escena
+        Invoke("DesbloquearMatematicas", 0.5f);
+    }
+
+    void DesbloquearMatematicas()
+    {
+        candado = false;
     }
 
     void ActualizarPuntuaciones(bool estaMarcado)
     {
+        // Si el candado sigue activo (escena cargando), cancelamos la suma
+        if (candado) return;
+
         int scorePrincipal = PlayerPrefs.GetInt("ScoreGlobal", 0);
         int scoreSecundario = PlayerPrefs.GetInt("ScoreSecundario", 0);
 
@@ -35,13 +44,13 @@ public class PuntosToggle : MonoBehaviour
         {
             scorePrincipal += puntosScorePrincipal;
             scoreSecundario += puntosScoreSecundario;
-            PlayerPrefs.SetInt(idMision, 1); // Guardamos que la misión está hecha
+            PlayerPrefs.SetInt(idMision, 1);
         }
         else
         {
             scorePrincipal -= puntosScorePrincipal;
             scoreSecundario -= puntosScoreSecundario;
-            PlayerPrefs.SetInt(idMision, 0); // Guardamos que la misión se ha desmarcado
+            PlayerPrefs.SetInt(idMision, 0);
         }
 
         PlayerPrefs.SetInt("ScoreGlobal", scorePrincipal);
