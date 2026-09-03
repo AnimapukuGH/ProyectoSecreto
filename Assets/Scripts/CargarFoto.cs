@@ -15,6 +15,10 @@ public class CargarFoto : MonoBehaviour
     public Image imagenCheck;
     public TextMeshProUGUI textoContador;
 
+    [Header("Ratón Personalizado")]
+    [Tooltip("Arrastra aquí el GameObject de la UI que usas como ratón personalizado")]
+    public GameObject ratonPersonalizadoUI;
+
     [Header("Recompensa Canvas")]
     public GameObject segundoCanvas;
     [Tooltip("Arrastra aquí el objeto que actuará como botón para cerrar el panel")]
@@ -56,6 +60,9 @@ public class CargarFoto : MonoBehaviour
 
     IEnumerator MostrarExplorador()
     {
+        // 👉 Mostramos el cursor del sistema y ocultamos el ratón UI personalizado
+        ConfigurarEstadoRaton(mostrarSistema: true);
+
         yield return FileBrowser.WaitForLoadDialog(FileBrowser.PickMode.Files, false, null, null, "Selecciona una foto", "Subir");
 
         if (FileBrowser.Success)
@@ -89,6 +96,23 @@ public class CargarFoto : MonoBehaviour
                 yield return new WaitForSecondsRealtime(0.2f);
                 if (segundoCanvas != null) segundoCanvas.SetActive(true);
             }
+        }
+
+        // 👉 Ocultamos el cursor del sistema y volvemos a mostrar el ratón UI personalizado
+        ConfigurarEstadoRaton(mostrarSistema: false);
+    }
+
+    /// <summary>
+    /// Alterna entre el ratón por defecto del sistema operativo y tu ratón de UI personalizado.
+    /// </summary>
+    void ConfigurarEstadoRaton(bool mostrarSistema)
+    {
+        Cursor.visible = mostrarSistema;
+        Cursor.lockState = CursorLockMode.None;
+
+        if (ratonPersonalizadoUI != null)
+        {
+            ratonPersonalizadoUI.SetActive(!mostrarSistema);
         }
     }
 

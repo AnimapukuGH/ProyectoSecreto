@@ -513,6 +513,7 @@ MonoBehaviour:
   marcoDeFoto: {fileID: 0}
   imagenCheck: {fileID: 0}
   textoContador: {fileID: 0}
+  ratonPersonalizadoUI: {fileID: 0}
   segundoCanvas: {fileID: 1387236736}
   botonDeCierre: {fileID: 0}
 --- !u!114 &48943050
@@ -9596,6 +9597,10 @@ PrefabInstance:
       propertyPath: colorDesactivado.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5701837730674041589, guid: 1918b2d3ed5b7b14a8bc62f7984493e9, type: 3}
+      propertyPath: ratonPersonalizadoUI
+      value: 
+      objectReference: {fileID: 1324115682}
     - target: {fileID: 5701837730674041589, guid: 1918b2d3ed5b7b14a8bc62f7984493e9, type: 3}
       propertyPath: assetParaCambiarColor
       value: 

@@ -1,7 +1,8 @@
-using UnityEngine;
+锘縰sing UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 
 public class ControladorVideo : MonoBehaviour
@@ -15,32 +16,80 @@ public class ControladorVideo : MonoBehaviour
     [SerializeField] private GameObject canvas2;
     [SerializeField] private CanvasGroup canvas2CanvasGroup;
     [SerializeField] private Image faderBlanco;
+    [SerializeField] private Image contenedorSpriteUI;
+    [SerializeField] private Button botonClicPantallaCanvas2;
 
-    [Header("Configuraci髇 del Fade")]
+    [Header("Configuraci贸n del Fade Principal")]
     [SerializeField] private float fadeDuration = 1.5f;
 
-    [Header("Configuraci髇 de Puntuaci髇")]
+    [Header("Configuraci贸n del Flash entre Sprites")]
+    [SerializeField] private float tiempoEntradaBlanco = 0.05f;
+    [SerializeField] private float tiempoSalidaBlanco = 0.5f;
+
+    [Header("Configuraci贸n de Puntuaci贸n")]
     [SerializeField] private int puntosRequeridos = 10;
     [SerializeField] private TextMeshProUGUI textoPuntosVisual;
 
-    [Header("Configuraci髇 de Videos Estructurados")]
+    [Header("Configuraci贸n de Videos Estructurados")]
     [SerializeField] private VideoClip videoNormal;
     [SerializeField] private VideoClip videoEspecial;
     [SerializeField] private int clicsParaVideoEspecial = 5;
 
+    [Header("Mec谩nica de Sprites (Gacha)")]
+    [SerializeField] private List<Sprite> spritesComunes = new List<Sprite>();
+    [SerializeField] private List<Sprite> spritesPremios = new List<Sprite>();
+    [SerializeField] private Sprite spritePremioFinal;
+    [SerializeField] private int tirosParaPremio = 10;
+    [SerializeField] private Animator animadorContenedorSprite;
+
+    [Header("Configuraci贸n de Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sonidoPremioComun;
+    [SerializeField] private AudioClip sonidoPremioEspecial;
+    [SerializeField] private AudioClip sonidoPremioFinal;
+    [SerializeField] private float duracionFadeOutAudio = 0.15f; // 馃憠 Tiempo que tarda en apagarse el sonido activo
+
     private bool videoTerminado = false;
+    private bool bloqueandoClicsCanvas2 = false;
+    private Coroutine flashCoroutine;
+    private Coroutine fadeAudioCoroutine;
+
+    private List<Sprite> bolsaPremiosRestantes = new List<Sprite>();
+    private float volumenOriginalAudio = 1f;
 
     private void Start()
     {
+        if (audioSource != null)
+        {
+            volumenOriginalAudio = audioSource.volume;
+        }
+
         EstablecerEstadoInicial();
+        InicializarBolsaPremios();
 
         if (playButton != null) playButton.onClick.AddListener(IntentarIniciarPlayback);
         if (videoPlayer != null) videoPlayer.loopPointReached += OnVideoFinished;
+
+        if (botonClicPantallaCanvas2 != null) botonClicPantallaCanvas2.onClick.AddListener(ProcesarClicCanvas2);
+    }
+
+    private void InicializarBolsaPremios()
+    {
+        bolsaPremiosRestantes = new List<Sprite>();
+
+        for (int i = 0; i < spritesPremios.Count; i++)
+        {
+            if (PlayerPrefs.GetInt("PremioEntregado_" + i, 0) == 0)
+            {
+                bolsaPremiosRestantes.Add(spritesPremios[i]);
+            }
+        }
     }
 
     private void EstablecerEstadoInicial()
     {
         videoTerminado = false;
+        bloqueandoClicsCanvas2 = false;
 
         if (canvas2 != null) canvas2.SetActive(false);
 
@@ -69,11 +118,9 @@ public class ControladorVideo : MonoBehaviour
 
         if (puntuacionActual >= puntosRequeridos)
         {
-            // PERSISTENCIA: Leemos las pulsaciones acumuladas de la memoria del dispositivo
             int contadorClics = PlayerPrefs.GetInt("ClicsAcumuladosVideo", 0);
             contadorClics++;
 
-            // Restamos puntos y guardamos la nueva puntuaci髇
             puntuacionActual -= puntosRequeridos;
             PlayerPrefs.SetInt("ScoreSecundario", puntuacionActual);
 
@@ -82,13 +129,12 @@ public class ControladorVideo : MonoBehaviour
                 textoPuntosVisual.text = puntuacionActual.ToString();
             }
 
-            // ASIGNACI覰 DE VIDEO INTERCAMBIABLE
             if (videoPlayer != null)
             {
                 if (contadorClics >= clicsParaVideoEspecial)
                 {
                     videoPlayer.clip = videoEspecial;
-                    contadorClics = 0; // Se reinicia la racha a cero en disco duro
+                    contadorClics = 0;
                 }
                 else
                 {
@@ -96,9 +142,7 @@ public class ControladorVideo : MonoBehaviour
                 }
             }
 
-            // PERSISTENCIA: Guardamos el estado del contador en disco duro de forma segura
             PlayerPrefs.SetInt("ClicsAcumuladosVideo", contadorClics);
-            PlayerPrefs.Save();
 
             StartPlayback();
         }
@@ -155,34 +199,203 @@ public class ControladorVideo : MonoBehaviour
 
     private IEnumerator FadeFromWhite()
     {
+        bloqueandoClicsCanvas2 = true;
+
         if (canvas2 != null) canvas2.SetActive(true);
-
-        float currentTime = 0f;
-        Color colorOriginal = faderBlanco.color;
-
-        while (currentTime < fadeDuration)
-        {
-            currentTime += Time.deltaTime;
-            if (faderBlanco != null)
-            {
-                float alpha = Mathf.Lerp(1f, 0f, currentTime / fadeDuration);
-                faderBlanco.color = new Color(colorOriginal.r, colorOriginal.g, colorOriginal.b, alpha);
-            }
-            yield return null;
-        }
-
-        if (faderBlanco != null) faderBlanco.gameObject.SetActive(false);
 
         if (canvas2CanvasGroup != null)
         {
             canvas2CanvasGroup.interactable = true;
             canvas2CanvasGroup.blocksRaycasts = true;
         }
+
+        CalcularYMostrarSiguienteSprite();
+
+        float currentTime = 0f;
+        Color colorOriginal = faderBlanco.color;
+
+        while (currentTime < tiempoSalidaBlanco)
+        {
+            currentTime += Time.deltaTime;
+            if (faderBlanco != null)
+            {
+                float alpha = Mathf.Lerp(1f, 0f, currentTime / tiempoSalidaBlanco);
+                faderBlanco.color = new Color(colorOriginal.r, colorOriginal.g, colorOriginal.b, alpha);
+            }
+            yield return null;
+        }
+
+        if (faderBlanco != null)
+        {
+            faderBlanco.color = new Color(colorOriginal.r, colorOriginal.g, colorOriginal.b, 0f);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        bloqueandoClicsCanvas2 = false;
+    }
+
+    private void CalcularYMostrarSiguienteSprite()
+    {
+        int tirosActuales = PlayerPrefs.GetInt("ContadorTirosGacha", 0);
+        tirosActuales++;
+
+        if (tirosActuales >= tirosParaPremio)
+        {
+            if (contenedorSpriteUI != null)
+            {
+                if (bolsaPremiosRestantes.Count == 0)
+                {
+                    if (spritePremioFinal != null)
+                    {
+                        contenedorSpriteUI.sprite = spritePremioFinal;
+                        ReproducirSonidoConFade(sonidoPremioFinal);
+                    }
+                }
+                else
+                {
+                    int indiceAleatorio = Random.Range(0, bolsaPremiosRestantes.Count);
+                    Sprite premioElegido = bolsaPremiosRestantes[indiceAleatorio];
+                    contenedorSpriteUI.sprite = premioElegido;
+                    ReproducirSonidoConFade(sonidoPremioEspecial);
+
+                    int indiceOriginal = spritesPremios.IndexOf(premioElegido);
+                    if (indiceOriginal != -1)
+                    {
+                        PlayerPrefs.SetInt("PremioEntregado_" + indiceOriginal, 1);
+                        PlayerPrefs.Save();
+                    }
+
+                    bolsaPremiosRestantes.RemoveAt(indiceAleatorio);
+                }
+            }
+            PlayerPrefs.SetInt("ContadorTirosGacha", tirosParaPremio);
+        }
+        else
+        {
+            if (spritesComunes.Count > 0 && contenedorSpriteUI != null)
+            {
+                int indiceAleatorio = Random.Range(0, spritesComunes.Count);
+                contenedorSpriteUI.sprite = spritesComunes[indiceAleatorio];
+                ReproducirSonidoConFade(sonidoPremioComun);
+            }
+            PlayerPrefs.SetInt("ContadorTirosGacha", tirosActuales);
+        }
+
+        if (animadorContenedorSprite != null)
+        {
+            animadorContenedorSprite.Play("AparecerSprite", -1, 0f);
+        }
+    }
+
+    private void ReproducirSonidoConFade(AudioClip clip)
+    {
+        if (audioSource == null || clip == null) return;
+
+        if (fadeAudioCoroutine != null) StopCoroutine(fadeAudioCoroutine);
+        fadeAudioCoroutine = StartCoroutine(RutinaFadeOutYPlay(clip));
+    }
+
+    private IEnumerator RutinaFadeOutYPlay(AudioClip nuevoClip)
+    {
+        // 馃憠 Si hay un sonido sonando, bajamos su volumen gradualmente
+        if (audioSource.isPlaying)
+        {
+            float volumenInicial = audioSource.volume;
+            float tiempo = 0f;
+
+            while (tiempo < duracionFadeOutAudio)
+            {
+                tiempo += Time.deltaTime;
+                audioSource.volume = Mathf.Lerp(volumenInicial, 0f, tiempo / duracionFadeOutAudio);
+                yield return null;
+            }
+
+            audioSource.Stop();
+        }
+
+        // 馃憠 Restauramos el volumen y reproducimos el nuevo efecto
+        audioSource.volume = volumenOriginalAudio;
+        audioSource.clip = nuevoClip;
+        audioSource.Play();
+    }
+
+    private void ProcesarClicCanvas2()
+    {
+        if (bloqueandoClicsCanvas2) return;
+
+        int tirosActuales = PlayerPrefs.GetInt("ContadorTirosGacha", 0);
+
+        if (tirosActuales >= tirosParaPremio)
+        {
+            PlayerPrefs.SetInt("ContadorTirosGacha", 0);
+            PlayerPrefs.Save();
+            RegresarAlEstadoOriginal();
+        }
+        else
+        {
+            if (flashCoroutine != null) StopCoroutine(flashCoroutine);
+            flashCoroutine = StartCoroutine(FlashEntreSprites());
+        }
+    }
+
+    private IEnumerator FlashEntreSprites()
+    {
+        bloqueandoClicsCanvas2 = true;
+
+        if (faderBlanco != null)
+        {
+            faderBlanco.color = new Color(faderBlanco.color.r, faderBlanco.color.g, faderBlanco.color.b, 0f);
+            faderBlanco.gameObject.SetActive(true);
+        }
+
+        float currentTime = 0f;
+        Color colorOriginal = faderBlanco.color;
+
+        while (currentTime < tiempoEntradaBlanco)
+        {
+            currentTime += Time.deltaTime;
+            if (faderBlanco != null)
+            {
+                float alpha = Mathf.Lerp(0f, 1f, currentTime / tiempoEntradaBlanco);
+                faderBlanco.color = new Color(colorOriginal.r, colorOriginal.g, colorOriginal.b, alpha);
+            }
+            yield return null;
+        }
+
+        CalcularYMostrarSiguienteSprite();
+
+        currentTime = 0f;
+        while (currentTime < tiempoSalidaBlanco)
+        {
+            currentTime += Time.deltaTime;
+            if (faderBlanco != null)
+            {
+                float alpha = Mathf.Lerp(1f, 0f, currentTime / tiempoSalidaBlanco);
+                faderBlanco.color = new Color(colorOriginal.r, colorOriginal.g, colorOriginal.b, alpha);
+            }
+            yield return null;
+        }
+
+        if (faderBlanco != null)
+        {
+            faderBlanco.color = new Color(colorOriginal.r, colorOriginal.g, colorOriginal.b, 0f);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        bloqueandoClicsCanvas2 = false;
     }
 
     public void RegresarAlEstadoOriginal()
     {
         StopAllCoroutines();
+
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.volume = volumenOriginalAudio;
+        }
 
         if (videoPlayer != null) videoPlayer.Stop();
 
@@ -198,5 +411,6 @@ public class ControladorVideo : MonoBehaviour
     {
         if (playButton != null) playButton.onClick.RemoveListener(IntentarIniciarPlayback);
         if (videoPlayer != null) videoPlayer.loopPointReached -= OnVideoFinished;
+        if (botonClicPantallaCanvas2 != null) botonClicPantallaCanvas2.onClick.RemoveListener(ProcesarClicCanvas2);
     }
 }
